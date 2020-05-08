@@ -1,0 +1,201 @@
+/* pages/myTeaCourse/publish/setPreview/choice/choice.wxss */
+
+@media screen and (max-width: 320px) {
+  .out1 {
+    width: 100%;
+    height: 100%;
+    background-color: whitesmoke;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .out1 {
+    width: 100%;
+    height: 100vh;
+    background-color: whitesmoke;
+  }
+}
+
+.blank {
+  height: 15px;
+}
+
+.section {
+  height: 150px;
+  border: 1px solid hsl(0, 4%, 82%);
+  width: 80%;
+  margin: 10px auto 0 auto;
+  background-color: white;
+  font-size: 14px;
+  /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+}
+
+.section-input {
+  width: 100%;
+  border: #bbb;
+  padding: 5px;
+}
+
+.view1 {
+  left: 0px;
+  width: 80px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 2px;
+  background-color: rgba(140, 174, 133, 1);
+  text-align: center;
+  box-shadow: 2px 2px 2px 0px rgba(170, 170, 170, 1);
+}
+
+.xuanze {
+  color: rgba(255, 255, 255, 1);
+  font-size: 16px;
+  text-align: center;
+  font-family: PingFangSC-regular;
+}
+
+.view2 {
+  margin-top: 30px;
+  width: 80px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 2px;
+  background-color: rgba(140, 174, 133, 1);
+  text-align: center;
+  box-shadow: 2px 2px 2px 0px rgba(170, 170, 170, 1);
+}
+
+.daan {
+  color: rgba(255, 255, 255, 1);
+  font-size: 16px;
+  text-align: left;
+  font-family: PingFangSC-regular;
+}
+
+.view3 {
+  margin: 280px auto 0 auto;
+  width: 105px;
+  height: 37px;
+  line-height: 37px;
+  border-radius: 4px;
+  background-color: rgba(140, 174, 133, 1);
+  color: rgba(255, 255, 255, 1);
+  font-size: 14px;
+  text-align: center;
+  font-family: Microsoft Yahei;
+  border: 1px solid rgba(255, 255, 255, 0);
+}
+
+.fabu {
+  color: rgba(255, 255, 255, 1);
+  font-size: 16px;
+  text-align: left;
+  font-family: PingFangSC-regular;
+}
+
+.section1 {
+  position: absolute;
+  width: 200px;
+  height: 30px;
+  left: 68px;
+  top: 300px;
+  color: rgba(136, 136, 136, 1);
+  font-size: 14px;
+  text-align: left;
+  font-family: Arial;
+  background-color: white;
+  border: 1px solid rgba(187, 187, 187, 1);
+}
+
+.section2 {
+  position: absolute;
+  width: 200px;
+  height: 30px;
+  left: 68px;
+  top: 340px;
+  color: rgba(136, 136, 136, 1);
+  font-size: 14px;
+  text-align: left;
+  font-family: Arial;
+  background-color: white;
+  border: 1px solid rgba(187, 187, 187, 1);
+}
+
+.section3 {
+  position: absolute;
+  width: 200px;
+  height: 30px;
+  left: 68px;
+  top: 380px;
+  color: rgba(136, 136, 136, 1);
+  font-size: 14px;
+  text-align: left;
+  font-family: Arial;
+  background-color: white;
+  border: 1px solid rgba(187, 187, 187, 1);
+}
+
+.section4 {
+  position: absolute;
+  width: 200px;
+  height: 30px;
+  left: 68px;
+  top: 420px;
+  color: rgba(136, 136, 136, 1);
+  font-size: 14px;
+  text-align: left;
+  font-family: Arial;
+  background-color: white;
+  border: 1px solid rgba(187, 187, 187, 1);
+}
+
+.radio-group1 {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  left: 35px;
+  top: 304px;
+  color: rgba(136, 136, 136, 1);
+  background-color: white;
+  border: 1px solid rgba(187, 187, 187, 1);
+}
+
+.radio-group2 {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  left: 35px;
+  top: 344px;
+  color: rgba(136, 136, 136, 1);
+  background-color: white;
+  border: 1px solid rgba(187, 187, 187, 1);
+}
+
+.radio-group3 {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  left: 35px;
+  top: 384px;
+  color: rgba(136, 136, 136, 1);
+  background-color: white;
+  border: 1px solid rgba(187, 187, 187, 1);
+}
+
+.radio-group4 {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  left: 35px;
+  top: 424px;
+  color: rgba(136, 136, 136, 1);
+  background-color: white;
+  border: 1px solid rgba(187, 187, 187, 1);
+}

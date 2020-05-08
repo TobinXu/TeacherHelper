@@ -1,0 +1,22 @@
+<!--pages/myTeaCourse/courseware/callName/callName.wxml-->
+<view class='course'>
+    <image class='clip' src="../../../../image/clip.png"></image>
+    <image
+      class="callName {{tap == 2 ? 'radius' : ''}}"
+      src="{{tap == 2 ? '../../../../image/touxiang.jpg' : '../../../../image/callName2.png'}}">
+    </image>
+    <view class='text'>
+      <text hidden='{{tap != 1}}'>抽取中</text>
+    </view>
+
+    <view class='result' hidden='{{tap != 2}}'>
+      <text>姓名：罗飞</text>
+      <view><text>学号：0121613643020</text></view>
+    </view>
+
+
+    <view class='btn-box'>
+      <button class='btn' bindtap='callNameTap'>{{lists[tap]}}</button>
+    </view>
+</view>
+  

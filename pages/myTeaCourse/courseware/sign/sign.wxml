@@ -1,0 +1,6 @@
+<!--pages/myTeaCourse/courseware/sign/sign.wxml-->
+<view class='sign-in'>
+  <image class='sign-img' src='../../../../image/signSuc.png'></image>
+  <button class='sign-btn {{ abled ? "btnActive" : ""}}' catchtap='signTap'>{{abled? "成功开启":"开启签到"}}
+  </button>
+</view>

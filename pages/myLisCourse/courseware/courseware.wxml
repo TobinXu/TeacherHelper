@@ -1,0 +1,31 @@
+<!--pages/myTeaCourse/courseware/courseware.wxml-->
+
+<button class='btn' bindtap='synchronous'>开启PPT同步</button>
+
+<scroll-view class='page' scroll-y="true">
+  <!-- <view class='card' wx:for="{{coursewareLisr}}" wx:key="" data-index='{{index}}'> -->
+  <view class='card'>
+    <view class='number' catchtap='imgTap'>1</view>
+    <image src='' class='courseware'></image>
+  </view>
+  <view class='card'>
+    <view class='number'>2</view>
+    <image src='' class='courseware'></image>
+  </view>
+  <view class='card'>
+    <view class='number'>3</view>
+    <image src='' class='courseware'></image>
+  </view>
+  <view class='card'>
+    <view class='number'>4</view>
+    <image src='' class='courseware'></image>
+  </view>
+  <view class='card'>
+    <view class='number'>5</view>
+    <image src='' class='courseware'></image>
+  </view>
+  <view class='card'>
+    <view class='number'>6</view>
+    <image src='' class='courseware'></image>
+  </view>
+</scroll-view>

@@ -1,0 +1,36 @@
+<!--pages/estCourse/estCourse.wxml-->
+<view class='page'>
+  <view class='estBox'>
+    <form>
+      <!-- <image class='clip' src='../../../image/clip.png'></image> -->
+      <view class='box-content'>
+        <view class='box-content-card'>
+          <view class="input-item-label">课程</view>
+          <input class="input-item-content" type='text' 
+            placeholder='请输入课程名称' value='{{cName}}'
+            bindinput='cNameInput'>
+          </input>
+        </view>
+        <view class='box-content-card'>
+          <view class="input-item-label">班级</view>
+          <input class="input-item-content" type='text' 
+            placeholder='请输入班级名称' value='{{cClass}}'
+            bindinput='cClassInput'>
+          </input>
+        </view>
+        <view class='box-content-card'>
+          <view class="input-item-label">教师姓名</view>
+          <input class="input-item-content" type='text'
+            placeholder='请输入教师姓名' value='{{tName}}'
+            bindinput='tNameInput'>
+          </input>
+        </view>
+      </view>
+
+      <button class='finish' 
+        loading="{{loading}}" disabled="{{disabled}}" 
+        bindtap="finish">完成
+      </button>
+    </form>
+  </view>
+</view>

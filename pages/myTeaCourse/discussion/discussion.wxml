@@ -1,0 +1,43 @@
+<!--pages/myTeaCourse/discussion/discussion.wxml-->
+<view class=''>
+<!-- 吧主 -->
+  <view class='post-card'>
+    <view class='extra' data-tap='{{3}}'
+      catchtap='extraTap' >...</view>
+    <view class='extraDetail' hidden='{{extraHidden[3]}}'>
+      <view class='ex-de-line'>回复</view>
+      <view class='ex-de-line'>收藏</view>
+      <view >置顶</view>
+    </view>
+    <view class='userInfo'>
+      <view class='img-box'>
+        <image class='user-img' src='{{postsList[dId].avatarUrl}}'></image>
+      </view>
+      <view class='user-name'>{{postsList[dId].user_name}}</view>
+      <view class='user-time'>{{postsList[dId].time}}</view>
+    </view>
+    <view class='post-content'>{{postsList[dId].title}}</view>
+  </view>
+  <view class='blank'></view>
+
+<!-- 回复 -->
+  <view class='post-card' wx:for="{{postsList[dId].reply}}" wx:key="{{}}">
+    <view class='extra' data-tap='{{index}}'
+      catchtap='extraTap' >...</view>
+    <view class='extraDetail' hidden='{{extraHidden[index]}}'>
+      <view class='ex-de-line'>回复</view>
+      <view class='ex-de-line'>收藏</view>
+      <view >置顶</view>
+    </view>
+    <view class='userInfo'>
+      <view class='img-box'>
+        <image class='user-img' src='{{item.avatarUrl}}'></image>
+      </view>
+      <view class='user-name'>{{item.name}}</view>
+      <view class='user-time'>{{item.time}}</view>
+    </view>
+    <view class='post-content'>{{item.content}}</view>
+    <view class='blank2'></view>
+  </view>
+  
+</view>

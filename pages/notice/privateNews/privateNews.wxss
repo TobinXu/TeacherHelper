@@ -1,0 +1,31 @@
+/* pages/privateNews/privateNews.wxss */
+.priNewsCard{
+  padding: 10px;
+  height: 60px;
+  background-color: #fff;
+  border-bottom: 1px solid whitesmoke;
+}
+  .icon{
+    height: 54px;
+    width: 54px;
+    margin: 3px 0;
+    float: left;
+    border-radius: 50%;
+  }
+  .content{
+    padding-left: 65px;
+    padding-top: 5px;
+  }
+    .name{
+      font-size: 16px;
+    }
+    .time{
+      float: right;
+      color: #868585;
+      font-size: 12px; 
+      padding-top: 3px;
+    }
+    .con-content{
+      color: rgba(134, 133, 133, 1);
+      font-size: 14px;
+    }

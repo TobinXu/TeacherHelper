@@ -1,0 +1,208 @@
+<!--pages/detail/detail.wxml-->
+<view class='page'>
+  <view class='top-bar clearfix'>
+    <view class='btn' catchtap='changeTab' 
+      wx:for="{{topBarList}}" wx:key="" 
+      data-index='{{index}}'>
+      <text class='{{activeIndex ==  index ? "tab-active" : ""}}'>{{item}}</text>
+    </view>
+    <view class='add' catchtap='add'>
+      <image src='../../image/add.png'></image>
+    </view>
+  </view>
+
+  <view class='out' hidden='{{publishHidden}}'>
+    <view class='sqa'>
+      <navigator url="./publish/setCourseware/setCourseware?cName={{cName}}">
+        <view class='line'>
+          <text class='wenzi'>发布课件</text>
+        </view>
+      </navigator>
+      <navigator url="./publish/setPreview/setPreview?cName={{cName}}">
+        <view class='line'>
+          <text class='wenzi'>设置预习</text>
+        </view>
+      </navigator>
+      <navigator url="./publish/setHomework/setHomework?cName={{cName}}">
+        <view class='line'>
+          <text class='wenzi'>布置作业</text>
+        </view>
+      </navigator>
+      <navigator url="./publish/setAnnounce/setAnnounce?cName={{cName}}">
+        <view class='line'>
+          <text class='wenzi'>发布公告</text>
+        </view>
+      </navigator>
+    </view>
+
+    <view class='cancel' catchtap='add'>
+      <image class='cancel-img' src='../../image/cancel.png'></image>
+    </view>
+  </view>
+
+  <swiper bindchange="bindChange" current="{{activeIndex}}">
+    
+    <block>
+      <swiper-item item-id="{{1}}">
+        <view class='course-ware clearfix'>
+          <view class='c-w-card' catchtap='getIntoKejian'>
+            <image class='card-img' src='../../image/kejian.jpg'></image>
+            <image class='card-img-collect' catchtap='collected'
+              src='{{collected ? "../../image/collected.png" : "../../image/collect.png"}}'>
+            </image>
+            <view class='card-img-count'>27</view>
+            <view class='card-text'><text>第一课</text></view>
+          </view>
+
+          <view class='c-w-card'>
+            <image class='card-img' src='../../image/kejian.jpg'></image>
+            <image class='card-img-collect'
+              src="../../image/collect.png">
+            </image>
+            <view class='card-img-count'>32</view>
+            <view class='card-text'><text>第二课</text></view>
+          </view>
+
+          <view class='c-w-card'>
+            <image class='card-img' src='../../image/paper.png'></image>
+            <view class='card-img-count'></view>
+            <view class='card-text'><text>试卷（一）</text></view>
+          </view>
+
+          <view class='c-w-card'>
+            <image class='card-img' src='../../image/paper.png'></image>
+            <view class='card-img-count'></view>
+            <view class='card-text'><text>试卷（二）</text></view>
+          </view>
+        </view>
+
+      </swiper-item>
+    </block>
+
+    <block>
+      <swiper-item>
+        <view class='preview'>
+            <view class='page-hd'>
+              <view class='teacher'>
+                <image class='person-img' src='../../image/teacher.png'></image>
+                <view class='person-content'><text>王小明</text></view>
+              </view>
+              <view class='student'>
+                <image class='person-img' src='../../image/student.png'></image>
+                <view class='person-content'><text>27</text></view>
+              </view> 
+              <button class='watch-titles'
+                bindtap='previewTitles'>查看已发布的题目</button>
+            </view>
+
+            <view class='page-sec'>
+              <view class='page-sec-part'>
+                <view class='page-sec-img'>85%</view>
+                <view class='page-sec-content'>平均正确率</view>
+              </view>
+              <view class='ver-line'></view>
+              <view class='page-sec-part'>
+                <view class='page-sec-img'><text> 10'11"</text></view>
+                <view class='page-sec-content'><text>平均用时</text></view>
+              </view>
+            </view>
+
+            <view class='page-thr'>
+
+              <view class='page-thr-part'>
+                <view class='page-thr-part-title'>错误率最高</view>
+                <view class='page-thr-part-content'>
+                  <view class='title-number'>5</view>
+                  <view class='title-number'>7</view>
+                </view>
+              </view>
+
+              <view class='page-thr-part'>
+                <view class='page-thr-part-title'>用时最长</view>
+                <view class='page-thr-part-content'>
+                  <view class='title-number'>5</view>
+                  <view class='title-number'>6</view>
+                </view>
+              </view>
+
+              <button class='watch-form' bindtap='watchForm'>查看成绩单</button>
+
+            </view>
+            
+        </view>
+      </swiper-item>
+    </block>  
+
+    <block>
+      <swiper-item item-id="{{2}}">
+        <view class='discussion'>
+          <view class='sticky-post' bindtap='discussionTap'
+            wx:for="{{stickyPostList}}" wx:key="" 
+            data-index='{{index}}'>
+            <view class='sticky'>置顶</view>
+            <view class='sticky-content'>{{item}}</view>
+          </view>
+
+          <loading class="loading" hidden="{{loadHidden}}">
+            <text class="loading-font">加载中...</text>
+          </loading>
+          
+          <scroll-view style='height:600px' scroll-y="true">
+            <view class='post-card' catchtap='discussionTap'
+              wx:for="{{postsList}}" wx:key="{{index}}" data-discussion-id='{{index}}' >
+              <view class='blank'></view>
+              <view class='extra' data-tap='{{index}}'
+                catchtap='extraTap' >...</view>
+              <view class='extraDetail' hidden='{{extraHidden[index]}}'>
+                <view class='ex-de-line'>回复</view>
+                <view class='ex-de-line'>收藏</view>
+                <view >置顶</view>
+              </view>
+              <view class='userInfo'>
+                <view class='img-box'>
+                  <image class='user-img' src='{{item.avatarUrl}}'></image>
+                </view>
+                <view class='user-name'>{{item.user_name}}</view>
+                <view class='user-time'>{{item.time}}</view>
+              </view>
+              <view class='post-content'>{{item.title}}</view>
+              <view class='post-reply clearfix'>
+                <view class='reply-img-box'>
+                  <image class='reply-img' src='/image/reply.png'></image>
+                </view>
+                <view class='reply-info'>
+                  <text class='reply-name'>{{item.reply[0].name}}: </text>
+                  <text class='reply-content'>{{item.reply[0].content}}</text>
+                </view>
+                <view class='reply-info'>
+                  <text class='reply-name'>{{item.reply[1].name}}: </text>
+                  <text class='reply-content'>{{item.reply[1].content}}</text>
+                </view>
+              </view>
+              <view class='blank2'></view>
+            </view>
+            <view class='addPost' catchtap='addPost'>
+              <image class='addPost-img' src='../../image/addPost.png'></image>
+            </view>
+          </scroll-view> 
+
+        </view>
+      </swiper-item>
+    </block>
+
+    <block>
+      <swiper-item item-id="{{3}}">
+        <view class='announce'>
+          <view class='ann-card' wx:for="{{annList}}" wx:key=""
+            bindtap='annCardTap' data-tap='{{index}}'>
+            <view class='ann-card-head'>{{item.title}}</view>
+            <view class='ann-card-read'>{{item.read}}</view>
+            <view class='ann-card-content over-1-hidden'>{{item.content}}</view>
+            <view class='ann-card-time'>{{item.time}}</view>
+          </view>
+        </view>
+      </swiper-item>
+    </block>
+
+  </swiper>
+</view>

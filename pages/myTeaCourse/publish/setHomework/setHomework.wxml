@@ -1,0 +1,10 @@
+<!--pages/myTeaCourse/publish/setHomework/setHomework.wxml-->
+<view class='out2'>
+  <view class='rec'>
+   <textarea class='rec-input' placeholder="请输入作业内容" maxlength='500'></textarea>
+  </view>
+  <view class='send' >
+    <text class='fabu'>发布</text>
+  </view>
+  
+</view>

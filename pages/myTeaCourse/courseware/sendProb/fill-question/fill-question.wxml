@@ -1,0 +1,15 @@
+<!--pages/myTeaCourse/publish/setPreview/shortAnswer/shortAnswer.wxml-->
+<view class='out1'>
+  <view class='blank'></view>
+  <view class='view1'>
+    <text class='jianda'>简答题 </text>
+  </view>
+
+  <view class='section'>
+    <textarea class='section-input' placeholder="请输入问题" maxlength='500'></textarea>
+  </view>
+  <view class='view3'>
+    <text class='fabu'>确认发布</text>
+  </view>
+
+</view>

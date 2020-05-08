@@ -1,0 +1,11 @@
+<!--pages/privateNews/privateNews.wxml-->
+<view class='page'>
+  <view class='priNewsCard' wx:for="{{priNewsList}}" bindtap='priNewsDetail' wx:key="{{index}}">
+    <image class='icon' src='{{item.picUrl}}'></image>
+    <view class='content'>
+      <view class='time'>{{item.time}}</view>
+      <view class='name'>{{item.name}}</view>
+      <view class='con-content over-1-hidden'>{{item.content}}</view>
+    </view>
+  </view>
+</view>

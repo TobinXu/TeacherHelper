@@ -1,0 +1,42 @@
+/* pages/myTeaCourse/courseware/sendProb/sendProb.wxss */
+.page{
+  background-color:whitesmoke;
+  width: 100%;
+  height: 100vh;
+}
+
+.blank{
+  height: 150px;
+}
+
+.panel{
+  margin: 0 auto;
+  padding-top: 10px;
+  background-color: white;
+  width: 200px;
+  height: 273px;
+  border-color: black;
+  border-width: 10px;
+  font-size: 18px;
+  box-shadow: 2px 2px 3px 0px rgba(170, 170, 170, 1);
+  }
+
+  .move{
+    margin: 25px 50px auto;
+
+  }
+
+  .btn-box{
+    margin: 30px auto;
+  }
+
+  .but{
+    width: 80px;
+    height: 34px;
+    background-color: rgba(140, 174, 133, 1);
+    line-height: 33px;
+    font-size: 16px;
+    color: #fff;
+  }
+
+  

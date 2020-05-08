@@ -1,0 +1,24 @@
+<!--pages/myTeaCourse/publish/setPreview/setPreview.wxml-->
+<view class='out'>
+  <view class='head'>
+    <view class='head1' bindtap='choice'>
+      <text class='xuanze'>选择题</text>
+    </view>
+    <view class='head2' bindtap='judge'>
+      <text class='panduan'>判断题</text>
+    </view>
+    <view class='head3' bindtap='shortAnswer'>
+      <text class='jianda'>简答题</text>
+    </view>
+  </view>
+
+  <view class='body'>
+
+  </view>
+
+  <view class='foot'>
+    <view class='view3'>
+      <text class='fabu'>确认发布</text>
+    </view>
+  </view>
+</view>

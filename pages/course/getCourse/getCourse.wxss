@@ -1,0 +1,21 @@
+/* pages/getCourse/getCourse.wxss */
+.page{
+  height: 100vh;
+  position: relative;
+}
+.weui-search-bar__cancel-btn{
+  font-size: 16px;
+}
+.scan{
+  height: 120px;
+  width: 120px;
+  position: relative;
+  top: 180px;
+}
+.text-center{
+  text-align: center;
+}
+  .text-center view{
+    position: relative;
+    top: 200px;
+  }

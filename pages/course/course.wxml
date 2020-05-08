@@ -1,0 +1,65 @@
+<!--pages/course/course.wxml-->
+<view class='page'>
+  <!-- <view class='banner'>
+    <image src='../../image/banner.jpg'></image>
+  </view> -->
+
+    <swiper indicator-dots="true" autoplay="true" interval="3000" duration="100">
+    <block wx:for-items="{{banner}}" wx:key="">
+      <swiper-item>
+        <image class='banner' src="{{item.pic_url}}" />
+      </swiper-item>
+    </block>
+  </swiper>
+
+  <view class='page_head'>
+    <navigator class='estCourse' url='/pages/course/estCourse/estCourse'>
+      <view class='page_hd_img'>
+        <image src='../../image/establish.png'></image>
+      </view>
+      <view>
+        <view class='page_head_btn'>创建课程</view>
+      </view>
+    </navigator>
+    <view class='ver-line'></view>
+    <navigator class='getCourse' url='/pages/course/getCourse/getCourse'>
+      <view class='page_hd_img'>
+        <image src='../../image/getClass.png'></image>
+      </view>
+      <view>
+        <view class='page_head_btn'>加入课程</view>
+      </view>
+    </navigator>
+    <view style='clear:both;height:0'></view>
+  </view>
+  <view class='page_body'>
+    <view class='bar clearfix'>
+      <view class='btn' catchtap='classTap' data-index='0'>
+        <text class='{{activeIndex ==  0 ? "btn-active" : ""}}'> 我教的课 </text>
+      </view>
+      <view class='btn' catchtap='classTap' data-index='1'>
+        <text class='{{activeIndex ==  1 ? "btn-active" : ""}}'> 我听的课 </text>
+      </view>
+      <view style='clear:both;height:0'></view>
+    </view>
+
+    <view class='course' wx:for="{{course}}" wx:key=""
+      data-index='{{index}}' catchtap='cDetail'>
+      <image class='clip' src="../../image/clip.png"></image>
+      <image class='c-arrow' src='../../image/arrow.png'></image>
+      <view class='cName'>{{item.cName}}</view>
+      <view class='cInfo'>
+        <text class='cNum'>班级号：{{item.cNum}}</text>
+        <view>
+          <view  class='cMajor over-1-hidden'><text>{{item.cMajor}}</text></view>
+          <view>
+            <text class='cPeople'>{{item.cPeople}}</text>
+            <image class='cMajImg' src='../../image/person.png'></image>
+          </view>
+        </view>
+      </view>
+    </view>
+
+
+  </view>
+</view>
