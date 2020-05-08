@@ -1,0 +1,23 @@
+<!--pages/myTeaCourse/courseware/sendProb/sendProb.wxml-->
+<view class='page'>
+  <view class='blank'></view>
+  <view class='panel'>
+    <checkbox-group  catchchange="checkboxChange">
+      <view class='move'>
+        <checkbox value='选择题'>选择题</checkbox>
+      </view>
+      <view class='move'>
+        <checkbox value='判断题'>判断题</checkbox>
+      </view>
+      <view class='move'>
+        <checkbox value='简答题'>简答题</checkbox>
+      </view>
+    </checkbox-group>
+
+    <view class='btn-box'>
+      <button class='but' catchtap="finish">确定</button>
+    </view>
+    
+  </view>
+
+</view>

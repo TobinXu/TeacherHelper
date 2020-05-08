@@ -1,0 +1,45 @@
+<!--pages/myTeaCourse/courseware/courseware.wxml-->
+
+<button class='btn' bindtap='synchronous'>开启PPT同步</button>
+
+<scroll-view class='page' scroll-y="true">
+  <!-- <view class='card' wx:for="{{coursewareLisr}}" wx:key="" data-index='{{index}}'> -->
+  <view class='card' wx:for="{{pptList}}" wx:key=""
+    data-index='{{index+1}}'>
+    <view class='number' catchtap='imgTap'>{{index+1}}</view>
+    <image src='{{item}}' class='courseware'></image>
+  </view>
+</scroll-view>
+
+
+<view class="slide {{close ? 'slide-close' : 'slide-open'}}">
+  <view class="arrow-img {{close ? 'arrow-close' : 'arrow-open'}}" bindtap='slideOpen'>
+    <image class='arrow' src='../../../image/arrowL.png'></image>
+  </view>
+  <view class='func-list'>
+    <view class='func ' catchtap='signTap'>
+      <image class='func-img' src='../../../image/sign.png'></image>
+      <view class='func-text'>
+        <text>签到</text>
+      </view>
+    </view>
+    <view class='func ' catchtap='callNameTap'>
+      <image class='func-img' src='../../../image/callName.png'></image>
+      <view class='func-text'>
+        <text>随机点名</text>
+      </view>
+    </view>
+    <view class='func ' catchtap='editTap'>
+      <image class='func-img' src='../../../image/edit.png'></image>
+      <view class='func-text'>
+        <text>推送问题</text>
+      </view>
+    </view>
+    <view class='func border-none' catchtap='voteTap'>
+      <image class='func-img' src='../../../image/vote.png'></image>
+      <view class='func-text'>
+        <text>发起投票</text>
+      </view>
+    </view>
+  </view>
+</view>

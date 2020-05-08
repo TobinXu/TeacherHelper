@@ -1,0 +1,12 @@
+<!--pages/myTeaCourse/preview/previewTitles/previewTitles.wxml-->
+
+  <view class='pre-title-box' bindtap='preTap' data-tap='{{index}}'
+    wx:for="{{previewTitles}}" wx:key="">
+    <view class='pre-title-card'>
+      {{item.count}}预习测验
+      <image class='arrow' src='../../../../image/arrow.png'></image>
+    </view>
+    <view >
+      <text class='time'>{{item.time}}</text>
+    </view>
+  </view>

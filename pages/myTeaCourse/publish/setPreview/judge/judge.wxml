@@ -1,0 +1,41 @@
+<!--pages/myTeaCourse/publish/setPreview/judge/judge.wxml-->
+<view class='out1'>
+  <view class='blank'></view>
+  <view class='view1'>
+    <text class='panduan'>判断题 </text>
+  </view>
+
+  <view class='section'>
+    <textarea class='section-input' placeholder="请输入问题" maxlength='500'></textarea>
+  </view>
+
+  <view class='view2'>
+    <text class='daan'>答案 </text>
+  </view>
+
+  <view class='mix1'>
+    <view class='mix1-l'>
+      <radio-group class="radio-group" bindchange="radioChange">
+      </radio-group>
+    </view>
+    <view class='blank1'></view>
+    <view class='mix1-r'>
+        <text class='text'>正确</text>
+    </view>
+  </view>
+
+  <view class='mix2'>
+    <view class='mix2-l'>
+      <radio-group class="radio-group" bindchange="radioChange">
+      </radio-group>
+    </view>
+    <view class='blank1'></view>
+    <view class='mix2-r'>
+     <text class='text'>错误</text>
+    </view>
+  </view>
+
+  <view class='view3'>
+    <text class='fabu'>确认发布</text>
+  </view>
+</view>

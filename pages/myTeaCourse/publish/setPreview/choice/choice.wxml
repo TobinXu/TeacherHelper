@@ -1,0 +1,57 @@
+<!--pages/myTeaCourse/publish/setPreview/choice/choice.wxml-->
+<view class='out1'>
+  <view class='blank'></view>
+  <view class='view1'>
+    <text class='xuanze'>选择题 </text>
+  </view>
+
+  <view class='section'>
+    <textarea class='section-input' placeholder="请输入问题" maxlength='500'></textarea>
+  </view>
+
+
+
+  <view class='view2'>
+    <text class='daan'>答案 </text>
+  </view>
+
+  <view class='view3'>
+    <text class='fabu'>确认发布</text>
+  </view>
+
+
+  <view>
+    <view class="section1">
+      <input placeholder="A:" focus="{{focus}}" />
+    </view>
+    <radio-group class="radio-group1" bindchange="radioChange">
+    </radio-group>
+  </view>
+
+  <view>
+    <view class="section2">
+      <input placeholder="B:" focus="{{focus}}" />
+    </view>
+    <radio-group class="radio-group2" bindchange="radioChange">
+    </radio-group>
+  </view>
+
+  <view>
+    <view class="section3">
+      <input placeholder="C:" focus="{{focus}}" />
+    </view>
+    <radio-group class="radio-group3" bindchange="radioChange">
+    </radio-group>
+  </view>
+
+  <view>
+    <view class="section4">
+      <input placeholder="D:" auto-focus/>
+    </view>
+    <radio-group class="radio-group4" bindchange="radioChange">
+    </radio-group>
+  </view>
+
+
+
+</view>

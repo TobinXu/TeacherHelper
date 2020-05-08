@@ -1,0 +1,51 @@
+/* pages/estCourse/estCourse.wxss */
+.page{
+  height: 100vh;
+  background-color: #F9F9F9;
+  position: absolute;
+  width: 100%;
+}
+.estBox {
+  position: relative;
+  width: 270px;
+  height: 380px;
+  border-radius: 5px;
+  border: 1px solid #D8DEE2;
+  margin: 50px auto 0 auto;
+  background-color: #fff;
+}
+  .clip{
+    position: absolute;
+    left: -28px;
+    top: -28px;
+    width: 60px;
+    height: 60px;
+
+  }
+  .box-content{
+    margin: 30px 25px;
+  }
+    .box-content-card{
+      margin-bottom: 20px;
+    }
+      .input-item-label{
+        font-size: 15px;
+        padding-bottom: 5px;
+        font-weight: 900;
+      }
+
+      .input-item-content{
+        border: 1px solid #D1D5DA;
+        padding: 3px 8px;
+        border-radius: 3px;
+        font-size: 14px;
+      }
+  .finish{
+    width: 50%;
+    background-color: rgb(140, 174, 133);
+    color: white;
+    border-radius: 18px;
+    height: 40px;
+    font-size: 16px;
+    margin-top: 60px;
+  }

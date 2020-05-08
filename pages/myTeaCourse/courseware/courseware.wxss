@@ -1,0 +1,120 @@
+/* pages/myTeaCourse/courseware/courseware.wxss */
+page{
+  background-color: whitesmoke;
+}
+
+.btn{
+  position: fixed;
+  top: 15px;
+  left: 34%;
+  width: 120px;
+  height: 30px;
+  border-radius: 4px;
+  background-color: rgba(140, 174, 133, 1);
+  color: rgba(255, 255, 255, 1);
+  font-size: 14px;
+  line-height: 28px;
+  margin: 0 auto;
+}
+
+.page{
+  position: relative;
+  text-align: center;
+  background-color: whitesmoke;
+  top: 60px;
+  height: 600px;
+}
+  .card{
+    width: 300px;
+    height: 180px;
+    margin: 15px auto 0 auto;
+    position: relative;
+  }
+  .number{
+    position: absolute;
+    left: -18px;
+    top: 5px;
+    z-index: 1;
+    width: 24px;
+    height: 24px;
+    line-height: 20px;
+    border-radius: 4px;
+    background-color: rgba(140, 174, 133, 1);
+    color: #fff;
+    font-size: 14px;
+  }
+  .courseware{
+    position: relative;
+    width: 300px;
+    height: 180px;
+    z-index: 2;
+  }
+
+  
+
+/* slide */
+
+.slide{
+  height: 322px;
+  width: 105px;
+  position: absolute;
+  top: 20%;
+  right: 0;
+  z-index: 3;
+
+  background-color: #8CAE85;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+.slide-close{
+  transform:translateX(75%); 
+  transition: all 100ms linear;
+}
+.slide-open{
+  transform:translateX(0); 
+  transition: all 100ms linear;
+}
+  .arrow-close{
+    transform: rotate(0);
+    transition: all 100ms linear;
+  }
+  .arrow-open{
+    transform: rotate(180deg);
+    transition: all 100ms linear;
+  }
+  .arrow-img{
+    float: left;
+    height: 322px;
+    width: 24px;
+  }
+    .arrow{
+      height: 24px;
+      width: 24px;
+      margin-top: 150px;    
+    }
+  .func-list{
+    float: right;
+    width: 70px;
+    height: 80%;
+    text-align: center;
+    color: #fff;
+    margin-top: 25px;
+  }
+    .func{
+      border-bottom: 1px solid #fff;
+      height: 65px;
+    }
+    .border-none{
+      border-bottom: 0;    
+    }
+      .func-img{
+        width: 24px;
+        height: 24px;
+        margin-top: 8px;
+      }
+
+      .func-text{
+        padding: 0;
+        margin: 0;
+        font-size: 14px;
+      }

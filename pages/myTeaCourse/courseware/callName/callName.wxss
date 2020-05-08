@@ -1,0 +1,67 @@
+/* pages/myTeaCourse/courseware/callName/callName.wxss */
+
+page {
+  /* height: 100%; */
+  background-color: whitesmoke;
+}
+
+.course {
+  height: 800rpx;
+  width: 70%;
+  margin: 65px auto 0 auto;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 2px 2px 2px #aaa;
+  border-radius: 15px;
+  color: white;
+  position: relative;
+  text-align: center;
+}
+
+.clip {
+  position: absolute;
+  top: -23px;
+  left: -23px;
+  height: 60px;
+  width: 60px;
+}
+
+.text{
+  font-size: 14px;
+  color: black;
+  margin-top: 20px;
+  font-weight: 900;
+}
+
+.callName {
+  height: 130rpx;
+  width: 130rpx;
+  margin: 120px auto 0 auto;
+}
+
+.radius{
+  border-radius: 50%;
+}
+
+.result{
+  text-align: center;
+  color: black;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.btn-box{
+  width: 120px;
+  position: absolute;
+  bottom: 33px;
+  left: 30%;
+}
+
+.btn {
+  color: rgb(255, 255, 255);
+  background-color: rgb(140, 174, 133);
+  border-radius: 30px;
+  width: 120px;
+  height: 40px;
+  /* display: table-cell; */
+  font-size: 16px;
+}

@@ -1,0 +1,36 @@
+<!--pages/myTeaCourse/preview/report/report.wxml-->
+<view class='page'>
+  <view class='top-bar clearfix'>
+    <view class='btn'>
+      <text>姓名</text>
+    </view>
+    <view class='btn'>
+      <text>正确率</text>
+    </view>
+    <view class='btn'>
+      <text>用时</text>
+    </view>
+    <view class='img' bindtap='sortHidden'>
+      <image class='' src='../../../../image/sort.png'></image>
+    </view>
+
+    <view class='sort' hidden='{{sortHidden}}'>
+      <view class='ex-de-line' catchtap='sortByAcc'>按正确率</view>
+      <view catchtap='sortByTime'>按时长</view>
+    </view>
+  </view>
+
+  <view class='report clearfix' wx:for="{{reports}}" wx:key="">
+    <view class='btn'>
+      <text>{{item.name}}</text>
+    </view>
+    <view class='btn'>
+      <text>{{item.accuracy}}%</text>
+    </view>
+    <view class='btn'>
+      <text>{{item.time.minite}}'{{item.time.second}}"</text>
+    </view>
+  </view>
+
+
+</view>

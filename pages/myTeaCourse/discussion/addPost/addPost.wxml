@@ -1,0 +1,16 @@
+<!--pages/myTeaCourse/discussion/addPost/addPost.wxml-->
+<view class='page'>
+  <view class='blank'></view>
+  <textarea class='textarea' placeholder='请尽情讨论吧 ~' maxlength='500'></textarea>
+
+  <view class='section clearfix'>
+    <image class='pic-img' src='../../../../image/camera.png'></image>
+    <image class='pic-img' src='../../../../image/photo.png'></image>
+  </view>
+
+  <view class='pic-box clearfix'>
+    <view class='add-pic'>
+      <image class='add-img' src='../../../../image/add.png'></image>
+    </view>
+  </view>
+</view>

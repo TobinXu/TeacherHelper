@@ -1,0 +1,50 @@
+/* pages/myTeaCourse/courseware/courseware.wxss */
+.btn{
+  position: fixed;
+  top: 15px;
+  left: 34%;
+  width: 120px;
+  height: 30px;
+  border-radius: 4px;
+  background-color: rgba(140, 174, 133, 1);
+  color: rgba(255, 255, 255, 1);
+  font-size: 14px;
+  line-height: 28px;
+  margin: 0 auto;
+}
+
+.page{
+  position: relative;
+  text-align: center;
+  background-color: #fff;
+  top: 60px;
+  height: 600px;
+}
+  .card{
+    width: 300px;
+    height: 180px;
+    margin: 15px auto 0 auto;
+    position: relative;
+  }
+  .number{
+    position: absolute;
+    left: -18px;
+    top: 5px;
+    z-index: 1;
+    width: 24px;
+    height: 24px;
+    line-height: 20px;
+    border-radius: 4px;
+    background-color: rgba(140, 174, 133, 1);
+    color: #fff;
+    font-size: 14px;
+  }
+  .courseware{
+    position: relative;
+    background-color: gray;
+    width: 300px;
+    height: 180px;
+    z-index: 2;
+  }
+
+  

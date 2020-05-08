@@ -1,0 +1,25 @@
+/* pages/myTeaCourse/courseware/sign/sign.wxss */
+
+  .sign-in{
+    text-align: center;
+  } 
+    .sign-img{
+      margin-top: 200px;
+      height: 72px;
+      width: 72px;
+    }
+    .sign-in text{
+      font-size: 14px;
+    }
+    .sign-btn{
+      background-color: #BBBBBB;
+      color: #fff; 
+      margin-top: 10px;
+      width: 142px;
+      height: 36px;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+    .btnActive{
+      background-color: #8CAE85;
+    }
